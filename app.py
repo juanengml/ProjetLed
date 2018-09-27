@@ -14,7 +14,7 @@ try:
   status = True
 except:
   status = False
-
+global msg
 @app.route("/",methods=["GET","POST"])  
 def index():
   if request.method == "POST":
@@ -23,6 +23,7 @@ def index():
          # send comand RUN to robot 
          if status:
            ser.write("l")
+           #msg = ser.readline()[0:-2]
          else:
             print "No Send comand "   
      elif request.form['submit'] == "OFF":
@@ -30,6 +31,7 @@ def index():
          # send comand BACK to robot 
          if status:
            ser.write("d")
+           #msg = ser.readline()[0:-2]
          else:
             print "No Send comand "   
          
