@@ -15,15 +15,19 @@ $ pip2 install serial flask
 ### How to use ? 
 PS: Abra 2 terminais
 
+ 
+```shell
 terminal-1 $ git clone https://github.com/juanengml/ProjetLed.git
 terminal-1 $ cd ProjetLed
 terminal-1 $ python app.py 
+```
+
 
 Crie sua conta no https://ngrok.com/
 siga os passos para autenticação, depois com seu ngrok autenticado abra o segundo terminal
-
+```shell
 terminal-2 $ ./ngrok http 8080 
-
+```
 Espere ele gerar seu link simular a esse
 
 ![Figure 1-1](https://ngrok.com/static/img/ngrok-demo-static.png "Figure 1-1")
