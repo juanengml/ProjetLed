@@ -1,4 +1,4 @@
-int led = 2;
+int led = 13;
 char letra;
   
 void setup() {
@@ -13,11 +13,11 @@ void loop() {
  switch(letra){
   case 'l':
     digitalWrite(led,HIGH);
-    Serial.println("pin 13 ON");
+    
     break;
   case 'd':
     digitalWrite(led,LOW);
-    Serial.println("pin 13 OFF");
+    
     break;
  }
 }

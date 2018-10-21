@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Controle Lampadas</title>
+
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600,700'>
+	   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+	      
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	    <link rel="stylesheet" href="css/style.css">
+
+		<style type="text/css"></style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<center>
+      <div class="jumbotron">
+   <h1>Controle de On/Off </h1>
+
+
+   <p class="lead">Control Led</p>
+  </div>
+
+<br><br>
+
+
+
+    <div> 
+ 
+    <h2> Controle </h2>
+     
+             <h3> LED 1 </h3>  
+
+
+
+             <button href="#" id="led1-ON">ON</button>
+          
+             <button href="#" id="led1-OFF">OFF</button>
+         
+
+
+</div></center>
+
+<script>
+$( document ).ready(function(){
+    $("#led1-ON").on("mousedown", function() {
+     $.get('/led1-ON');
+     }).on('mouseup', function() {
+      
+    });
+    $("#led1-OFF").on("mousedown", function() {
+     $.get('/led1-OFF');
+     }).on('mouseup', function() {
+      
+    });
+    
+    
+});
+</script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+</body>
+</html>
