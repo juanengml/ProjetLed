@@ -46,10 +46,10 @@ Toda vez que que uma mensagem for publicada e o tópico for /led/ o esp estará 
 ### Eletronica no nodemcu e no Raspberry 
 #### 1 - Passo: vc conecta seu modulo rele no nodemcu 
 
-<div>
-<img src="v2/circuito0.jpeg" width="15%"><br>
-<img src="v2/circuito1.jpeg" width="50%">
- </div>
+
+
+<center><img src="v2/circuito1.jpeg" width="60%"></center>
+  
 
 ![Figure 1-3](v2/eletronica/circuito3.png "Figure 1-3")
 
