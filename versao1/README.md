@@ -38,13 +38,14 @@ Seu arduino esta programado para ler 2 valores de entrada, 'l' para ligar e 'd' 
 
 
 ### Eletronica no Arduino e no Raspberry 
-1 - Passo: vc conecta seu modulo rele no arduino 
+#### 1 - Passo: vc conecta seu modulo rele no arduino 
 
 ![Figure 1-2](https://niltonfelipe.files.wordpress.com/2015/02/teste-630x368.png "Figure 1-2")
 
-2 - Passo: conecte seu raspberry na porta usb do arduino
+#### 2 - Passo: conecte seu raspberry na porta usb do arduino
 
 ![Figure 1-3](https://www.embarcados.com.br/wp-content/uploads/2015/10/imagem-de-destaque-4-696x418.png "Figure 1-3")
 
-3) Hacking Happy ! 
+#### 3 - Hacking Happy ! 
+
 ![Gat hacker](https://media.giphy.com/media/kMfVZAUME15XG/giphy.gif)
