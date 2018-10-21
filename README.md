@@ -47,16 +47,17 @@ Toda vez que que uma mensagem for publicada e o tópico for /led/ o esp estará 
 #### 1 - Passo: vc conecta seu modulo rele no nodemcu 
 
 <div>
-<img src="v2/circuito0.jpeg" width="40%">
-<img src="v2/circuito1.jpeg" width="40%">
+<img src="v2/circuito0.jpeg" width="15%"><br>
+<img src="v2/circuito1.jpeg" width="50%">
  </div>
-! 
+
 ![Figure 1-3](v2/eletronica/circuito3.png "Figure 1-3")
+
 ![Figure 1-4](v2/webcontrol.png "Figure 1-4")
 
 #### 2 - Passo: conecte seu raspberry na mesma rede que seu nodemcu 
 
-![Figure 1-3](topologia.png "Figure 1-3")
+![Figure 1-5](v2/topologia.png "Figure 1-5")
 
 #### 3 - Hacking Happy ! 
 
