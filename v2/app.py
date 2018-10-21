@@ -20,7 +20,7 @@ def index():
 def left_side():
    data1="led1-ON"
    print data1
-   client.publish("/led1/","ON")
+   client.publish("/led1/","1")
 
    return 'true'
  
@@ -28,7 +28,7 @@ def left_side():
 def right_side():
    data1="led1-OFF"
    print data1
-   client.publish("/led1/","OFF")
+   client.publish("/led1/","0")
    return 'true'
  
 if __name__ == "__main__":
