@@ -7,7 +7,7 @@ const char* SSID = "tapodi"; // rede wifi
 const char* PASSWORD = "naolembro"; // senha da rede wifi
 
 const char* BROKER_MQTT = "192.168.100.10"; // ip/host do broker
-int BROKER_PORT = 8080; // porta do broker
+int BROKER_PORT = 1883; // porta do broker
 
 // prototypes
 void initPins();
@@ -74,9 +74,9 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length) {
   }
   Serial.println("Tópico => " + String(topic) + " | Valor => " + String(message));
   if (message == "1") {
-    digitalWrite(D5, 1);
+    digitalWrite(13, 1);
   } else {
-    digitalWrite(D5, 0);
+    digitalWrite(13, 0);
   }
   Serial.flush();
 }
