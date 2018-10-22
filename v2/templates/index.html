@@ -34,15 +34,21 @@
 
     <div> 
  
-    <h2> Controle </h2>
+    
      
-             <h3> LED 1 </h3>  
+             <br>
 
-
-
-             <button href="#" id="led1-ON">ON</button>
+             <p class="display-4" hidden="True">
+		       	{% if data.lampada == 1 %}
+		        		LIGADA
+		        {% else %}
+		       			DESLIGADA
+		        {% endif %}
+    	     </p>
+             <h3> Controle Lampada </h3>
+             <button href="#" class="btn btn-info" id="led1-ON">ON</button>
           
-             <button href="#" id="led1-OFF">OFF</button>
+             <button href="#" class="btn btn-success" id="led1-OFF">OFF</button>
          
 
 
