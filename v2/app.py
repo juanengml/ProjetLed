@@ -5,9 +5,9 @@ from flask import render_template, request,url_for
  
 app = Flask(__name__, static_url_path='/static')
 
-#client = mqtt.Client()
+client = mqtt.Client()
 # conecta no broker
-#client.connect("192.168.100.10", 1883)
+client.connect("192.168.100.3", 1883)
 
 
  
@@ -21,7 +21,7 @@ def index():
 def left_side():
    file = open("data.txt","w")
    print "led1-ON" 
- #  client.publish("/led1/","1")
+   client.publish("/led1/","1")
     
    file.write("Lampada 1")
    file.close()
@@ -32,7 +32,7 @@ def left_side():
 def right_side():
    file = open("data.txt","w")
    print "led1-OFF"
-   # client.publish("/led1/","0")
+   client.publish("/led1/","0")
    file.write("Lampada 0")
    file.close() 
    return "false"
